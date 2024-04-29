@@ -1,0 +1,146 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "1+1",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null,
+      "example": false
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "1 + 1 = 2",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 17,
+          "total_tokens": 24
+        },
+        "model_name": "gpt-3.5-turbo",
+        "system_fingerprint": "fp_3b956da36b",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "run-36b43df2-bb15-4acf-a08f-88819debed39-0",
+      "example": false,
+      "tool_calls": [],
+      "invalid_tool_calls": []
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "add 2",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null,
+      "example": false
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "2 + 2 = 4",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 35,
+          "total_tokens": 42
+        },
+        "model_name": "gpt-3.5-turbo",
+        "system_fingerprint": "fp_3b956da36b",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "run-1d5411fe-e1f6-4c44-bc01-56acbe442826-0",
+      "example": false,
+      "tool_calls": [],
+      "invalid_tool_calls": []
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "add 5",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null,
+      "example": false
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "4 + 5 = 9",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 53,
+          "total_tokens": 60
+        },
+        "model_name": "gpt-3.5-turbo",
+        "system_fingerprint": "fp_3b956da36b",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "run-58370841-4c0d-438b-90f5-154c9e860dc0-0",
+      "example": false,
+      "tool_calls": [],
+      "invalid_tool_calls": []
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "exit",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null,
+      "example": false
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "If you have any more questions in the future, feel free to ask! Goodbye!",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 69,
+          "total_tokens": 87
+        },
+        "model_name": "gpt-3.5-turbo",
+        "system_fingerprint": "fp_3b956da36b",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "run-6f9d4bcf-4171-4f0f-8bc6-b0fdba001031-0",
+      "example": false,
+      "tool_calls": [],
+      "invalid_tool_calls": []
+    }
+  }
+]
