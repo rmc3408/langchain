@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from models.doc import Doc, DocResponse
 from typing import Optional
 
-from prompt import qa_template, generate_context
+from prompt import rag_template, generate_context
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -38,12 +38,12 @@ async def logging(request, call_next):
 
 
 # ROUTES
-@app.post("/doc/conversation")
+@app.post("/doc/description")
 async def read(query: str):
     # User collects all information from Database
     text_ocr = 'This is a user has 3 years of intense fitness, diet of 3000 calories per day and his goal is bulking'
 
-    prompt = ChatPromptTemplate.from_template(qa_template)
+    prompt = ChatPromptTemplate.from_template(rag_template)
 
     chain = prompt | chat_model
     result = chain.invoke({

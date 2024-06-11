@@ -7,6 +7,7 @@ from langchain_community.vectorstores import DocArrayInMemorySearch
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from operator import itemgetter
+from transcript import pinecone
 
 load_dotenv()
 
@@ -67,14 +68,17 @@ vectorstore1 = DocArrayInMemorySearch.from_texts(
     embedding=embeddings,
 )
 
-retriever1 = vectorstore1.as_retriever()
-
+#retriever1 = vectorstore1.as_retriever()
+retriever1 = pinecone.as_retriever()
 
 retrieverChain = RunnableParallel(context=retriever1, question=RunnablePassthrough())
 
 chain3 = retrieverChain | prompt | model | parser
-result3 = chain3.invoke("What color is Patricia's car?")
-print(result3)
-result4 = chain3.invoke("What car does Lucia drive?")
-print(result4)
+# result3 = chain3.invoke("What color is Patricia's car?")
+# print(result3)
+#
+# result4 = chain3.invoke("What car does Lucia drive?")
+# print(result4)
 
+result5 = chain3.invoke("What is the video about in 20 words.")
+print(result5)

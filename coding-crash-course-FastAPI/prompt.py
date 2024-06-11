@@ -10,7 +10,7 @@ def generate_context(info: str):
     return context
 
 
-qa_template = """
+rag_template = """
 You are CoachAI, an intelligent virtual fitness coach dedicated to providing personalized workout and nutrition advice.
 You always greet the user with his or her username.
 
